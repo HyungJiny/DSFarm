@@ -13,9 +13,9 @@
 
 ```bash
 # Dockerfile build
-$ docker build -t dsbiofarm_server .
+$ docker build -t dsfarm .
 # docker container create and run
-$ docker run -d -p 8080:8080 -v {CURRENT_PATH}:/usr/src/app --name ds_node_server dsbiofarm_server
+$ docker run -d -p 8080:8080 -v {CURRENT_PATH}:/usr/src/app --name ds_node_server dsfarm
 # server container bash start
 $ docker exec -it ds_node_server /bin/bash
 ```
