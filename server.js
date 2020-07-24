@@ -2,11 +2,11 @@
 
 const express = require('express');
 
-// 상수
+// server basic setting
 const PORT = 8080;
 const HOST = '0.0.0.0';
 
-// 앱
+// home app
 const app = express();
 app.get('/', (req, res) => {
   res.send('Hello World');
