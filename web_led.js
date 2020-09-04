@@ -16,10 +16,10 @@ app.get('/led', function(req, res) {
 app.post('/data', function(req, res) {
     var state = req.body.led ;
     if (state == 'on') {
-        led.writeSync(1) ;
+        led.writeSync(0) ;
     }
     else {
-        led.writeSync(0) ;
+        led.writeSync(1) ;
     }
     console.log(state) ;
     res.sendfile('led_web.html', {root : __dirname }) ;

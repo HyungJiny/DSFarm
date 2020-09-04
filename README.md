@@ -23,5 +23,5 @@ $ docker exec -it ds_node_server /bin/bash
 ## 실행하기
 
 ```bash
-$ node server.js
+$ node web_led.js
 ```
